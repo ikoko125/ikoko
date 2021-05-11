@@ -1,7 +1,10 @@
 <template>
-  <Header />
-  <p>aaa</p>
-  <nuxtlink>
+<div>
+  <Header/>
+  <main>
+    <h1>aaaaa</h1>
+  </main>
+</div>
 </template>
 
 <script lang="ts">
