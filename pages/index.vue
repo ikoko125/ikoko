@@ -14,4 +14,7 @@ export default Vue.extend({})
 </script>
 
 <style>
+html{
+  background-color: #202337;
+}
 </style>
