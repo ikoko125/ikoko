@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header id="header" :class="{ '-fixed': scrollY > 600 }">
         <!-- <img src="/logo.gif"> -->
         <ul>
             <li><nuxt-link to="">About</nuxt-link></li>
@@ -8,12 +8,33 @@
         </ul>
     </header>
 </template>
+<script>
+
+export default {
+  data() {
+    return {
+      // 座標を指定
+      scrollY: 0
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      this.scrollY = window.scrollY
+    }
+  }
+}
+</script>
 
 <style scoped>
 
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Kosugi+Maru&family=Oswald:wght@400;700&family=Fredoka+One&family=Pattaya&family=Shippori+Mincho:wght@500;800&display=swap');
     header{
         background-color: #202337;
+        width: 100%;
+        transition: 0.6s;
     }
     ul * {
         list-style: none;
@@ -22,7 +43,14 @@
     ul li{
         display:inline-block;
     }
-
+    .-fixed{
+        position: fixed  !important;
+        top:0;
+        box-shadow: 0 -0.3rem 1rem 0.5rem #f1f1f1;
+    }
+    .-fixed:hover{
+        box-shadow: 0 -0.3rem 1rem 0.5rem #2273c4;
+    }
     ul{
             display: flex;
     -ms-flex-wrap: wrap;
