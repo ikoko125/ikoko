@@ -30,8 +30,6 @@ html{
   min-height: 100%;
 
 }
-body{
-}
 h1{
   color: #f2f2f2;
   font-size: 5rem;
