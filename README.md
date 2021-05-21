@@ -1,6 +1,6 @@
 # ikoko
 
-##ライセンスについて
+## About License
 
 ソースコード部は MITライセンスとします
 
