@@ -13,11 +13,7 @@
 
     </section>
     <NewsCont/>
-    <section id="content">
-      <div>
-        
-      </div>
-    </section>
+    <MainCont/>
   </main>
 </div>
 </template>
@@ -52,12 +48,5 @@ h1{
   grid-template-columns: 1fr 1.5fr;
   max-width: 1300px;
   margin: 0 auto;
-}
-#content{
-  padding: 5rem 0;
-  width: 100%;
-  background-color: #202337;
-  color: #f2f2f2;
-  font-size: 3.3rem;
 }
 </style>
