@@ -1,5 +1,11 @@
 # ikoko
 
+## About License
+
+ソースコード部は MITライセンスとします
+
+本文の内容は明記がない限りはCC4.0 BYとします
+
 ## Build Setup
 
 ```bash
