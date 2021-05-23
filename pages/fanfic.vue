@@ -12,11 +12,7 @@
 
 
     </section>
-    <NewsCont/>
     <section id="content">
-      <div>
-        
-      </div>
     </section>
   </main>
 </div>

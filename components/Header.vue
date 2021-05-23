@@ -4,7 +4,7 @@
         <ul>
             <li><nuxt-link to="">About</nuxt-link></li>
             <li><nuxt-link to="">Works</nuxt-link></li>
-            <li><nuxt-link to="">fanfic</nuxt-link></li>
+            <li><nuxt-link to="fanfic">fanfic</nuxt-link></li>
         </ul>
     </header>
 </template>
