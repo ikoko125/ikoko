@@ -1,6 +1,20 @@
 export default {
+  ssr: false,
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  build: {
+    extend(config, { isDev }) {
+      if (!isDev) {
+        config.output.publicPath = './_nuxt/'
+      }
+
+    }
+  },
+  router: {
+    base: '/',
+    mode: 'hash'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

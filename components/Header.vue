@@ -1,8 +1,9 @@
 <template>
     <header id="header" :class="{ '-fixed': scrollY > 600 }">
         <!-- <img src="/logo.gif"> -->
+          <p id="topi"><nuxt-link to="/">top</nuxt-link></p>
         <ul>
-            <li><nuxt-link to="">About</nuxt-link></li>
+            <li><nuxt-link to="/about">About</nuxt-link></li>
             <li><nuxt-link to="">Works</nuxt-link></li>
             <li><nuxt-link to="fanfic">fanfic</nuxt-link></li>
         </ul>
@@ -36,6 +37,14 @@ export default {
         width: 100%;
         transition: 0.6s;
     }
+    #topi{
+      margin-right: 5rem;
+      display: inline-block;
+    }
+    ul{
+      display: inline;
+      width: auto;
+    }
     ul * {
         list-style: none;
         ;
@@ -52,16 +61,13 @@ export default {
         box-shadow: 0 -0.3rem 1rem 0.5rem #2273c4;
     }
     ul{
-            display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     justify-content: flex-start;
     padding-top: 23px;
         padding: 0;
         align-content: center;
         vertical-align: middle;
     }
-    a{
+    header a, #topi a{
     display: block;
     color: #f1f1f1;
     text-decoration: none;
