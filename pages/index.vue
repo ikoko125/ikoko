@@ -1,17 +1,29 @@
 <template>
 <div>
     <section id="top">
-      <div>
-      <h1>ikoko</h1>
-      </div>
       <div id="covertop">
         <p>aaa</p>
       </div>
 
 
     </section>
-    <NewsCont/>
-    <MainCont/>
+    
+    <section id="content">
+      <div>
+      <h1>ikoko</h1>
+      </div>
+      <div>
+        <p>About</p>
+        <p>Works</p>
+        <p>Fanfic</p>
+        <p>Other</p>
+        <p>Other</p>
+        <p>Other</p>
+        <p>Other</p>
+        <p>Other</p>
+        <p>Other</p>
+      </div>
+    </section>
 </div>
 </template>
 
