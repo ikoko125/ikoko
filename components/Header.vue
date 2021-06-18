@@ -3,7 +3,7 @@
         <!-- <img src="/logo.gif"> -->
           <p id="topi"><nuxt-link to="/">top</nuxt-link></p>
         <ul>
-            <li><nuxt-link to="/about">About</nuxt-link></li>
+            <li><nuxt-link to="/news">News</nuxt-link></li>
             <li><nuxt-link to="">Works</nuxt-link></li>
             <li><nuxt-link to="fanfic">fanfic</nuxt-link></li>
         </ul>
