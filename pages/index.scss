@@ -22,3 +22,46 @@ html{
     max-width: 1300px;
     margin: 0 auto;
   }
+  #icon{
+    width: 300px;
+    border-radius: 100%;
+  }
+  #about1{
+    padding: 5rem 0;
+    display: grid;
+    div{
+      color: #f2f2f2;
+      justify-content: center;
+      text-align: center;
+      img{
+        display: inline-block;
+      }
+      h2{
+        font-size: 3rem;
+      }
+      a{
+        text-decoration: none;
+        color: #f2f2f2;
+        font-weight: bold;
+      }
+        span{
+          border-radius: 1.5rem;
+          padding: 0.5rem 1rem;
+          &.qi{
+            background-color: #55C500;
+          }
+          &.gi{
+            background-color: #f2f2f2;
+            color: #222;
+          }
+          &.tw{
+            background-color: #1DA0F1;
+          }
+          &.pi{
+            background-color: #0196FA;
+          }
+        }
+      
+      
+    }
+  }

@@ -3,13 +3,6 @@
       <div>
         <p>About</p>
         <p>Works</p>
-        <p>Fanfic</p>
-        <p>Other</p>
-        <p>Other</p>
-        <p>Other</p>
-        <p>Other</p>
-        <p>Other</p>
-        <p>Other</p>
       </div>
     </section>
 </template>
