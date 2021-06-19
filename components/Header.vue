@@ -184,6 +184,7 @@ export default {
       justify-content: center;
       img{
         width: 1rem;
+        height: 1rem;
       }
     }
     #mn{
