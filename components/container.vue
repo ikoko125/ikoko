@@ -1,6 +1,5 @@
 <template>
     <div class="c">
-
         <slot/>
     </div>
 </template>
@@ -17,17 +16,29 @@
         &:hover{
             filter: brightness(1.5);
         }
+        position: relative;
         transition: 0.45s filter;
         overflow: hidden;
         z-index: 5;
         border-radius: 2vw;
         border: none;
         margin: 1rem 0;
-        color: #f1f1f1;
         background-color: #f1f1f1;
         width: 100%;
         height: 40vw;
         font-size: 5vw;
+        
+        a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+        position: absolute;
+        color: #f1f1f1;
+        text-decoration: none;
+
+        }
     }
     .c-jp,.c-en{
         background:linear-gradient(to bottom, #002c 0%, #002c 25%,transparent 100%);

@@ -37,7 +37,9 @@
       <div id="content-w">
         <div id="t">
           <Container class="bg1">
+            <nuxt-link to="/works/minecraft/">
               <h3 class="c-en">Minecraft</h3>
+             </nuxt-link>
           </Container>
           <Container class="bg2">
             <h3 class="c-jp">磐島重工</h3>
@@ -58,7 +60,9 @@
             <h3 class="c-en">Modes-fi</h3>
           </Container>
           <Container class="bg8">
+            <nuxt-link to="/works/minecraft/server/">
             <h3 class="c-en">Server</h3>
+            </nuxt-link>
           </Container>
           <Container class="bg9">
             <h3 class="c-en">Archive-Live</h3>
