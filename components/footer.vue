@@ -6,12 +6,13 @@
         </div>
         <div class="cpr"> 
             <p>&copy; 2021 ikoko125 This site sourcecode is Licensed under MIT.</p>
-            <a href="https://github.com/ikoko125/ikoko"><p>View Source</p></a>
+            <a href="https://github.com/ikoko125/ikoko"><p><span id="respshort">View </span>Source</p></a>
         </div>
     </div>
     <div id="fta">
-        <div class="cpr"> 
-            <p>&copy; 2021 ikoko125 All rights reserved, unless otherwise noted (e.g. Creative Commons license).</p>
+        <div class="cpr2"> 
+            <p>&copy; 2021 ikoko125 All rights reserved</p>
+            <p>unless otherwise noted (e.g. Creative Commons license).</p>
         </div>
     </div>
     <!-- このサイトにて表記・使用されている自著である著作物の権利は例外表記(クリエイティブコモンズライセンス等)がない限り製作者に帰属します。 -->
@@ -34,11 +35,15 @@
             .cpr{
                 display: flex;
                 align-items: center;
+            }
+
+            .cpr, .cpr2{
                 a,p{
                     
                     // font-family: "Kosugi Maru", sans-serif;
                     display: inline-block;
                     text-decoration: none;
+                    white-space: pre-line;
                     &:nth-child(2){
                         border-radius: 1rem;
                         background-color: #333;
@@ -61,6 +66,60 @@
             justify-content: center;
             background-color: #ddd;
             padding: 0.5rem;
+        }
+    }
+            .cpr2{
+                p{
+                text-align: center;
+                    &:nth-child(2){
+                        color: #888;
+                    }
+                }
+            }
+    @media screen and (max-width:780px) {
+        #ftlogo{
+            display: none;
+        }
+        #ft, #fta{
+            font-size: 0.8rem;
+        }
+        #respcpr{
+            font-size: 0.5rem;
+            color: #888;
+        }
+    }
+    @media screen and (max-width:480px) {
+        #ft{
+            padding: 0.5rem !important;
+        }
+        #ft, #fta{
+            font-size: 0.8rem;
+            letter-spacing: -0.035rem;
+        }
+        #respcpr{
+            color: #888;
+            letter-spacing: -0.035rem;
+        }
+        #ftlogo, #ftlogo p, #respshort{
+            display: none;
+        }
+        .cpr, .cpr2{
+            a,p{
+                    &:nth-child(2){
+                        padding: 0.2rem 0.45rem !important;
+                        margin: 0.25rem !important;
+                    }
+            }
+        }
+        .cpr2{
+            p{
+                font-size: 1rem;
+                line-height: 1rem;
+            }
+            p:nth-child(2){
+                font-size: 0.8rem;
+                line-height: 0.8rem;
+            }
         }
     }
 </style>
