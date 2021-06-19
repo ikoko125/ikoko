@@ -5,8 +5,8 @@
             <p>ikoko</p>
         </div>
         <div class="cpr"> 
-            <p>&copy; 2021 ikoko125 This site sourcecode is Licensed under MIT.</p>
-            <a href="https://github.com/ikoko125/ikoko"><p><span id="respshort">View </span>Source</p></a>
+            <a href="https://github.com/ikoko125/ikoko"><p>&copy; 2021 ikoko125 This site sourcecode is Licensed under MIT.</p></a>
+            <a class="vs" href="https://github.com/ikoko125/ikoko"><p class="vs">View Source</p></a>
         </div>
     </div>
     <div id="fta">
@@ -21,6 +21,10 @@
 
 <style lang="scss">
     footer{
+        a{
+            text-align: center;
+            color: #333;
+        }
         // font-family: "Oswald", sans-serif;
         font-family: 'Alef', sans-serif;
         #ft{
@@ -87,6 +91,9 @@
             font-size: 0.5rem;
             color: #888;
         }
+        .vs{
+                display: none !important;
+            }
     }
     @media screen and (max-width:480px) {
         #ft{
@@ -110,6 +117,7 @@
                         margin: 0.25rem !important;
                     }
             }
+            
         }
         .cpr2{
             p{
