@@ -31,8 +31,9 @@ export default {
 
 <style scoped>
 
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Kosugi+Maru&family=Oswald:wght@400;700&family=Fredoka+One&family=Pattaya&family=Shippori+Mincho:wght@500;800&display=swap');
+
     header{
+        z-index: 15;
         background-color: #202337;
         width: 100%;
         transition: 0.6s;

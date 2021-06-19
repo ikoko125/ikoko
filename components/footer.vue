@@ -20,6 +20,8 @@
 
 <style lang="scss">
     footer{
+        // font-family: "Oswald", sans-serif;
+        font-family: 'Alef', sans-serif;
         #ft{
             display: flex;
             justify-content: space-between;
@@ -33,6 +35,8 @@
                 display: flex;
                 align-items: center;
                 a,p{
+                    
+                    // font-family: "Kosugi Maru", sans-serif;
                     display: inline-block;
                     text-decoration: none;
                     &:nth-child(2){
