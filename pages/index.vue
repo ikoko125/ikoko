@@ -29,19 +29,41 @@
     </section>
     
     <section id="content">
-      <div>
-      <h1>ikoko</h1>
-      </div>
-      <div>
-        <p>About</p>
-        <p>Works</p>
-        <p>Fanfic</p>
-        <p>Other</p>
-        <p>Other</p>
-        <p>Other</p>
-        <p>Other</p>
-        <p>Other</p>
-        <p>Other</p>
+      <div id="content-w">
+        <div id="t">
+          <Container>
+            <h3>ハヤテのごとく！二次創作</h3>
+          </Container>
+          <Container>
+            <h3>磐島重工</h3>
+          </Container>
+          <Container>
+          </Container>
+          <Container>
+          </Container>
+          <Container>
+          </Container>
+          <Container>
+          </Container>
+          <Container>
+          </Container>
+          <Container>
+          </Container>
+        </div>
+        <div>
+        <h1>ikoko</h1>
+        </div>
+        <div>
+          <p>About</p>
+          <p>Works</p>
+          <p>Fanfic</p>
+          <p>Other</p>
+          <p>Other</p>
+          <p>Other</p>
+          <p>Other</p>
+          <p>Other</p>
+          <p>Other</p>
+        </div>
       </div>
     </section>
 </div>

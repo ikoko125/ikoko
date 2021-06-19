@@ -65,3 +65,19 @@ html{
       
     }
   }
+  #content{
+    #content-w{
+      max-width: 1400px;
+      margin: 0 auto;
+      
+    }
+  }
+  #t{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    align-content: space-between;
+    
+  }
