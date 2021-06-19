@@ -83,6 +83,11 @@ export default {
       animation: 1s forwards mntamenu;
     font-family: 'Fredoka One', cursive;
     color: #353535;
+    user-select: none;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.2) !important;
+    }
       }
     }
     #menux{
@@ -99,6 +104,11 @@ export default {
       animation: 1s forwards mntamenu;
     font-family: 'Fredoka One', cursive;
     color: #353535;
+    user-select: none;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.2);
+    }
       }
     @keyframes mnta {
       0%{
