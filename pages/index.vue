@@ -15,9 +15,9 @@
       <div>
         <div id="icon">
           <img alt="icon" src="/image/06X.png">
-          <div class="icon-ov">
+          <nuxt-link to="/about" class="icon-ov">
             <p>>>More</p>
-          </div>
+          </nuxt-link>
         </div>
         <div>
           <h2>いここ</h2>

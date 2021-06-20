@@ -16,6 +16,8 @@
     "@nuxt/types": "^2.15.3",
     "@nuxt/typescript-build": "^2.1.0",
     "node-sass": "^5.0.0",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "three": "^0.129.0",
+    "three-css3drenderer": "^1.0.1"
   }
 }

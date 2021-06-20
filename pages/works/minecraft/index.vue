@@ -1,3 +1,20 @@
 <template>
+    <div>
     <h1>工事中です</h1>
+    <MinecraftListcomp>
+        建築物
+    </MinecraftListcomp>
+    <MinecraftListcomp>
+        節電鯖
+    </MinecraftListcomp>
+    <MinecraftListcomp>
+        芦原鯖
+    </MinecraftListcomp>
+    <MinecraftListcomp>
+        磐島重工
+    </MinecraftListcomp>
+    <MinecraftListcomp>
+        磐島重工
+    </MinecraftListcomp>
+    </div>
 </template>
