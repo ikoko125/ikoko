@@ -4,22 +4,22 @@
           <p id="topi"><nuxt-link to="/"><img id="tlogo" alt="logo" src="/image/jp.png"></nuxt-link></p>
         <ul>
             <li><nuxt-link to="/news">News</nuxt-link></li>
-            <li><nuxt-link to="">Works</nuxt-link></li>
+            <li><nuxt-link to="/works">Works</nuxt-link></li>
             <li><nuxt-link to="fanfic">fanfic</nuxt-link></li>
         </ul>
         <div id="hd-r" @click="mn">
           <img alt="menu" src="/image/menu.png">
           </div>
-          <div id="mnt" v-if="mnt">
+          <div id="mnt" v-if="mnt" :class="{ 'disable': mnt > false }">
             <div id="mntc">
               <div class="menu" v-if="mnt">
-                <p>news</p>
+                <nuxt-link to="/news"><p>news</p></nuxt-link>
               </div>
               <div class="menu" v-if="mnt">
-                <p>works</p>
+                <nuxt-link to="/works"><p>works</p></nuxt-link>
               </div>
               <div class="menu" v-if="mnt">
-                <p>fanfic</p>
+                <nuxt-link to="/"><p>fanfic</p></nuxt-link>
               </div>
             </div>
               <div id="menux">
@@ -75,18 +75,25 @@ export default {
       height: 100%;
       }
       .menu{
-        padding: 1.5rem 2.5rem;
+        width: 80%;
+        text-align: center;
+        user-select: none;
+        cursor: pointer;
+        padding: 0.7rem 1.3rem;
         border-radius: 1.5rem;
-        font-size: 2rem;
         background-color: #f1f1f1;
         display: inline-block;
       animation: 1s forwards mntamenu;
+    a{
     font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    color: #353535;
+    }
     color: #353535;
     user-select: none;
     cursor: pointer;
     &:hover{
-      transform: scale(1.2) !important;
+      transform: scale(1.05) !important;
     }
       }
     }
@@ -113,9 +120,11 @@ export default {
     @keyframes mnta {
       0%{
         background-color: transparent;
+        opacity: 0;
       }
       100%{
         background-color: #0009;
+        opacity: 1;
       }
     }
     @keyframes mntamenu {

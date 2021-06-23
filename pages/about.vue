@@ -10,6 +10,7 @@
           <h2>いここ</h2>
           <p>ハヤテのごとくだいすき</p>
           <p>WEBサイトを作ったりMinecraftとかします</p>
+          <p>芦原サーバー　鯖主</p>
           <p style="margin: 1rem 0;">
             <a href="https://qiita.com/ikoko125"><span class="qi">Qiita</span></a>
             <a href="https://github.com/ikoko125"><span class="gi">Github</span></a>
@@ -69,14 +70,14 @@
           </div>
           <h3>Software</h3>
           <div class="ab2box">
-              <p>minecraft</p>
-              <p>BlockBench</p>
-              <p>Magicavoxel</p>
-              <p>Gimp2</p>
-              <p>Metasequoia4</p>
+              <a href="https://www.minecraft.net/"><p>minecraft</p></a>
+              <a href="https://www.blockbench.net"><p>BlockBench</p></a>
+              <a href="https://ephtracy.github.io"><p>Magicavoxel</p></a>
+              <a href="https://www.gimp.org"><p>Gimp2</p></a>
+              <a href="https://www.metaseq.net/"><p>Metasequoia4</p></a>
               <p>VisualStudioCode</p>
               <p>Node.js</p>
-              <p>Blender(sometimes)</p>
+              <a href="https://www.blender.org"><p>Blender(sometimes)</p></a>
               <p>Slack</p>
               <p>Discord</p>
               <p>ClipStudioPaintPro</p>
@@ -84,14 +85,14 @@
               <p>Illustrator</p>
               <p>XD</p>
               <p>Figma</p>
-              <p>Aviutl</p>
+              <a href="http://spring-fragrance.mints.ne.jp/aviutl/"><p>Aviutl</p></a>
           </div>
           <h3>Team</h3>
           <p>所属しているサーバー・組織など</p>
           <div class="ab2box">
               <p>芦原鯖(Owner)</p>
               <p>節電鯖(G3管理)</p>
-              <p>美味ぽん酢鯖(初期整備)</p>
+              <a href="https://yumponz.art"><p>美味ぽん酢鯖(だしまきマップ初期整備)</p></a>
               <p>CASCU</p>
               <p>とえいもんクリエ</p>
               <p>宝条八方鯖</p>

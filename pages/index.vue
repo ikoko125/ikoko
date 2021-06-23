@@ -23,6 +23,7 @@
           <h2>いここ</h2>
           <p>ハヤテのごとくだいすき</p>
           <p>WEBサイトを作ったりMinecraftとかします</p>
+          <p>芦原サーバー　鯖主</p>
           <p style="margin: 1rem 0;">
             <a href="https://qiita.com/ikoko125"><span class="qi">Qiita</span></a>
             <a href="https://github.com/ikoko125"><span class="gi">Github</span></a>
