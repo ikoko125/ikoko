@@ -1,52 +1,115 @@
 <template>
-    <section>
+    <section id="works">
         <div>
         <h1>Works</h1>
         </div>
         <div class="ui-wrapper">
-            <div class="Minecraft">
-                <p>MINECRAFT</p>
-            </div>
-            <div class="OtherFanfic">
-                <p>FANFIC</p>
-            </div>
-            <div class="fanfichayate">
-                <p>HAYATE-FANFIC</p>
-            </div>
-            <div class="ASHI">
-                <p>ASHI</p>
-            </div>
-            <div class="Magicavoxel">
-                <p>MAGICAVOXEL</p>
-            </div>
-            <div class="modesfi">
-                <p>MODES-FI</p>
-            </div>
-            <div class="product">
-                <p>PRODUCT</p>
-            </div>
-            <div class="Design">
-                <p>DESIGN</p>
-            </div>
-            <div class="Illust">
-                <p>ILLUST</p>
-            </div>
-            <div class="program">
+            <transition name="show" appear>
+                <div class="Minecraft" key="u" v-show="viewcontrol">
+                    <p>MINECRAFT</p>
+                </div>
+            </transition>
+            <transition name="show" appear>
+                <div class="OtherFanfic" v-show="viewcontrol">
+                    <p>FANFIC</p>
+                </div>
+            </transition>
+            <transition name="show" appear>
+                <div class="fanfichayate" v-show="viewcontrol">
+                    <p>HAYATE-FANFIC</p>
+                </div>
+            </transition>
+            <transition name="show" appear>
+                <div class="ASHI" v-show="viewcontrol">
+                    <p>ASHI</p>
+                </div>
+            </transition>
+            <transition name="show" appear>
+                <div class="Magicavoxel" v-show="viewcontrol">
+                    <p>MAGICAVOXEL</p>
+                </div>
+            </transition>
+            <transition name="show" appear>
+                <div class="modesfi" v-show="viewcontrol">
+                    <p>MODES-FI</p>
+                </div>
+            </transition>
+            <transition name="show" appear>
+                <div class="product" v-show="viewcontrol">
+                    <p>PRODUCT</p>
+                </div>
+            </transition>
+            <transition name="show" appear>
+                <div class="Design" v-show="viewcontrol">
+                    <p>DESIGN</p>
+                </div>
+            </transition>
+            <transition name="show" appear>
+                <div class="Illust" v-show="viewcontrol">
+                    <p>ILLUST</p>
+                </div>
+            </transition>
+            <transition name="show" appear>
+            <div class="program" v-show="viewcontrol">
                 <p>PROGRAM</p>
             </div>
-            <div class="RTM">
+            </transition>
+            <transition name="show" appear>
+            <div class="RTM" v-show="viewcontrol">
                 <p>RTM</p>
             </div>
-            <div class="ADD1"></div>
-            <div class="ADD2"></div>
-            <div class="ADD3"></div>
-            <div class="ADD4"></div>
+            </transition>
+            <transition name="show" appear>
+            <div class="ADD1" v-show="viewcontrol"></div>
+            </transition>
+            <transition name="show" appear>
+            <div class="ADD2" v-show="viewcontrol"></div>
+            </transition>
+            <transition name="show" appear>
+            <div class="ADD3" v-show="viewcontrol"></div>
+            </transition>
+            <transition name="show" appear>
+            <div class="ADD4" v-show="viewcontrol"></div>
+            </transition>
         </div>
         
     </section>   
 </template>
 
+<script>
+export default {
+    data(){
+        return{
+            viewcontrol: true
+        }
+    },
+    mounted(){
+        window.addEventListener('load', function() {
+            this.viewcontrol = !this.viewcontrol;
+            console.log(this.viewcontrol);
+})
+    },
+    methods:{
+        window : onload = function(){
+            this.viewcontrol = !this.viewcontrol;
+            console.log(this.viewcontrol);
+        }
+    },
+}
+</script>
+
 <style lang="scss" scoped>
+    .show-enter-active , .show-leave-active{
+    transition: all 1s;
+    }
+    .show-enter {
+     transform: (translateY(50px) rotateX(90deg));
+    }
+    @for $i from 1 through 15 {
+        .show-enter-active:nth-child(#{$i}) { 
+            transition: transform 0.8s 0.05s * $i ; 
+        }
+    }
     section{
         background-color: #070721;
         z-index: 5;
@@ -114,7 +177,6 @@
                         }
                         div:hover{
                             opacity: 0.7;
-                            transform: scale(1.05);
                             padding-bottom: 100px;
                         }
                         .RTM { 
