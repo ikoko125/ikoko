@@ -11,6 +11,8 @@
         </div>
     <h2>作品</h2>
         <div id="work">
+            <div class = "bigview bg1"></div>
+            <div class = "bigview bg2"></div>
             <div></div>
             <div></div>
             <div></div>
@@ -42,6 +44,17 @@
             height: 240px;
             margin: 5px;
             background-color: #f1f1f1;
+            }
+            .bigview{
+                width: 490px;
+                height: 240px;
+                margin: 5px;
+                background-color: #f1f1f1;
+                background-size: cover;
+
+            }
+            .bg1{
+                background-image: url(/image/minecraft/view1.png);
             }
         }
     }
