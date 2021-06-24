@@ -122,7 +122,6 @@ export default {
         z-index: 5;
             h1{
                 z-index: -1;
-                transform: translateY(-2vw);
                 top:-8vw;
                 color: #505075;
                 font-size: 15vw;

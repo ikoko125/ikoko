@@ -1,20 +1,21 @@
 <template>
-    <div>
-    <h1>工事中です</h1>
-    <MinecraftListcomp>
-        建築物
-    </MinecraftListcomp>
-    <MinecraftListcomp>
-        節電鯖
-    </MinecraftListcomp>
-    <MinecraftListcomp>
-        芦原鯖
-    </MinecraftListcomp>
-    <MinecraftListcomp>
-        磐島重工
-    </MinecraftListcomp>
-    <MinecraftListcomp>
-        磐島重工
-    </MinecraftListcomp>
-    </div>
+    <section>
+        <div>
+            <h1>工事中です</h1>
+        </div>
+        <div>
+            <h2>Minecraftについて</h2>
+            <p>minecraftは2009年にcave gameとしてリリースされた同人ゲームでした。その後2011年末ごろまでβリリースなどが続けられ、製品版としてついにリリースされ人気も増していきました</p>
+            <p>日本での一般層への普及は2014年半ば頃ですが、ネットの住人たちが目をつけていたのは2010年末～2013年頃のことです。</p>
+            <p>私は2012年小学6年生の頃にMinecraftを購入しました。当時のプレイヤー人口は500万人程度でした。(現在は2億人ほど)</p>
+        </div>
+    <h2>作品</h2>
+    </section>
 </template>
+
+
+<style lang="scss" scoped>
+    section{
+        background-color: rgb(37, 18, 31);
+    }
+</style>
