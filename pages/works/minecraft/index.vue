@@ -10,6 +10,18 @@
             <p>私は2012年小学6年生の頃にMinecraftを購入しました。当時のプレイヤー人口は500万人程度でした。(現在は2億人ほど)</p>
         </div>
     <h2>作品</h2>
+        <div id="work">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </section>
 </template>
 
@@ -17,5 +29,20 @@
 <style lang="scss" scoped>
     section{
         background-color: rgb(37, 18, 31);
+        #work{
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            div{
+
+            width: 240px;
+            height: 240px;
+            margin: 5px;
+            background-color: #f1f1f1;
+            }
+        }
     }
 </style>

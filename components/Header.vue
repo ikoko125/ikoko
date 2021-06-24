@@ -183,8 +183,7 @@ export default {
     display: block;
     color: #f1f1f1;
     text-decoration: none;
-    margin: 0 1.5rem;
-    padding: 0.65rem 1rem;
+    padding: 0.65rem 2.5rem;
     font-size: 1.35rem;
     /* font-family: 'Shippori Mincho', serif; */
     /* font-family: 'Pattaya', sans-serif; */
