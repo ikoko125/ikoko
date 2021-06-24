@@ -5,7 +5,7 @@
         </div>
         <div class="ui-wrapper">
             <transition name="show" appear>
-                <div class="Minecraft" key="u" v-show="viewcontrol">
+                <div class="Minecraft" @click="pagepre('/works/minecraft')" key="u" v-show="viewcontrol">
                     <p>MINECRAFT</p>
                 </div>
             </transition>
@@ -93,6 +93,9 @@ export default {
         window : onload = function(){
             this.viewcontrol = !this.viewcontrol;
             console.log(this.viewcontrol);
+        },
+        pagepre(url){
+            setTimeout(() => this.$router.push(url),1000);
         }
     },
 }
@@ -109,6 +112,9 @@ export default {
         .show-enter-active:nth-child(#{$i}) { 
             transition: transform 0.8s 0.05s * $i ; 
         }
+    }
+    .ui-wrapper a{
+        text-decoration: none;
     }
     section{
         user-select: none;
@@ -144,7 +150,7 @@ export default {
                             transition: 0.5s cubic-bezier(.09,.66,.48,.99);
                             margin: 2.5px;
                             background-size: cover;
-                            a,p{
+                            a, p{
                                 color:#f1f1f1;
                                 font-size:2.4vw;
                                 background-color: #0005;
