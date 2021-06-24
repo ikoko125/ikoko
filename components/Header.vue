@@ -12,13 +12,13 @@
           </div>
           <div id="mnt" v-if="mnt" :class="{ 'disable': mnt > false }">
             <div id="mntc">
-              <div class="menu" v-if="mnt">
+              <div class="menu" v-if="mnt" @click="mnt = false">
                 <nuxt-link to="/news"><p>news</p></nuxt-link>
               </div>
-              <div class="menu" v-if="mnt">
+              <div class="menu" v-if="mnt" @click="mnt = false">
                 <nuxt-link to="/works"><p>works</p></nuxt-link>
               </div>
-              <div class="menu" v-if="mnt">
+              <div class="menu" v-if="mnt" @click="mnt = false">
                 <nuxt-link to="/"><p>fanfic</p></nuxt-link>
               </div>
             </div>

@@ -111,6 +111,7 @@ export default {
         }
     }
     section{
+        user-select: none;
         background-color: #070721;
         z-index: 5;
             h1{
