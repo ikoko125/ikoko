@@ -1,5 +1,5 @@
 #mctop{
-    background-image: url(/image/minecraft/view6.png);
+    background-image: url(/image/minecraft/view6x.webp);
     background-size: cover;
     background-position-y: 80%;
     h1{
@@ -87,6 +87,7 @@ section{
                         border-radius: 0.75rem;
                         border: solid 2px #f1f1f1;
                         transition: 0.4s;
+                        user-select: none;
                         &:hover{
                             border: solid 2px #330f0f;
                             background-color: #cd5c5c;
@@ -202,31 +203,31 @@ section{
             
         }
         .smbg1{
-            background-image: url(/image/minecraft/view2u.png);
+            background-image: url(/image/minecraft/view2u.webp);
             &:hover{
                 background-position-y: 50%;
             }
         }
         .smbg2{
-            background-image: url(/image/minecraft/view3.png);
+            background-image: url(/image/minecraft/view3.webp);
             &:hover{
                 background-position-y: 70%;
             }
         }
         .smbg3{
-            background-image: url(/image/minecraft/view5.png);
+            background-image: url(/image/minecraft/view5.webp);
             &:hover{
                 background-position-y: 40%;
             }
         }
         .smbg4{
-            background-image: url(/image/minecraft/view6.jpg);
+            background-image: url(/image/minecraft/view6.webp);
             &:hover{
                 background-position-y: 80%;
             }
         }
         .bg1{
-            background-image: url(/image/minecraft/view1.png);
+            background-image: url(/image/minecraft/view1.webp);
         }
     }
 }

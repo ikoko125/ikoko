@@ -19,7 +19,7 @@
 
 <style lang="scss" scoped>
     #mctop{
-    background-image: url(/image/minecraft/view6.png);
+    background-image: url(/image/minecraft/view6.webp);
     background-size: cover;
     background-position-y: 80%;
     .wrapper{
@@ -166,23 +166,23 @@ section{
             
         }
         .bg1{
-            background-image: url(/image/minecraft/build1/view1.png);
+            background-image: url(/image/minecraft/build1/view1.webp);
             background-size: cover;
             background-position-y: 70%;
         }
         .bg2{
-            background-image: url(/image/minecraft/build1/view2.png);
+            background-image: url(/image/minecraft/build1/view2.webp);
             background-size: cover;
             background-position-x: 40%;
         }
         
         .bg3{
-            background-image: url(/image/minecraft/build1/view3.png);
+            background-image: url(/image/minecraft/build1/view3.webp);
             background-size: cover;
             background-position-x: 50%;
         }
         .bg4{
-            background-image: url(/image/minecraft/build1/view4.png);
+            background-image: url(/image/minecraft/build1/view4.webp);
             background-size: cover;
         }
     }
