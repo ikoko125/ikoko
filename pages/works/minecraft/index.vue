@@ -45,14 +45,18 @@
             <div id="ikk126">
                 <img class="ikk125" src="/image/cascu.webp" alt="ikoko125">
             </div>
+            <p>建築の更なる発展を求めるため、芦原鯖1.12.2(新床市)は都市連合CASCUに参加しています。</p>
             <div class="ikk124">
                 <div>
+                    <h3>方針</h3>
                     <p>"CASCU(カスク)は完全招待制のMINECRAFT都市連合です。MINECRAFT都市開発を牽引し、完全招待制にする事により今までの都市連合にない、美しさを追求するCASCUは、都市連合組織に対する新たなアプローチを熟考します。
 より沢山の人々が知る都市、美への探究心、都市同士のコミュニティ活性化、建築意欲の増進を目的に、日々活動しています。"</p>
+                
                 </div>
                 <div class="lr">
                     <p>CASCU</p>
                 </div>
+                <p class="btn"><a href="https://cascuofficial.wixsite.com/cascu/about-cascu"><span>learn more</span></a><a href="https://cascuofficial.wixsite.com/cascu"><span>CASCU Official</span></a></p>
             </div>
         </div>
     <h2>CATEGORY</h2>
