@@ -31,6 +31,7 @@ section{
     @media  screen and (min-width:1024px) {
         h2{
             font-size: 5vw;
+            border-left: solid 2.5rem rgb(243, 221, 23);
         }
     }
     @media  screen and (min-width:1400px) {
@@ -40,13 +41,33 @@ section{
     }
     color: #f1f1f1;
     background-color: rgb(37, 18, 31);
-    #intro, #profile{
+    #intro, #profile, #cascu{
         padding-top: 1rem;
         padding-bottom: 1rem;
         background-color: #1118;
         margin-bottom: 1rem;
         
         font-family: "Shippori Mincho" , serif;
+        .ikk124{
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding:0.6rem 0;
+            padding-left: 1rem;
+            border-left: solid 10px #cd5c5c;
+            background-color: #05050577;
+            display: grid;
+            grid-template-columns: 1fr 0.1fr;
+            p{
+                width:100%;
+                max-width:auto;
+            }
+            .lr{
+                writing-mode: vertical-rl;
+                color: #f1f1f199;
+
+            }
+        }
         p{
             width: 90%;
             max-width: 1400px;
@@ -59,12 +80,13 @@ section{
                 color: rgb(243, 221, 23);
             }
         }
-        #ikk125{
+        #ikk125, #ikk126{
             display: flex;
             justify-content: center;
         }
         img.ikk125{
             height: 300px;
+            image-rendering: pixelated;
         }
     }
     .catw{
