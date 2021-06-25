@@ -5,7 +5,7 @@
         <ul>
             <li><nuxt-link to="/news">News</nuxt-link></li>
             <li><nuxt-link to="/works">Works</nuxt-link></li>
-            <li><nuxt-link to="fanfic">fanfic</nuxt-link></li>
+            <li><nuxt-link to="/fanfic">fanfic</nuxt-link></li>
         </ul>
         <div id="hd-r" @click="mn">
           <img alt="menu" src="/image/menu.png">
