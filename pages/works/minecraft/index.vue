@@ -16,7 +16,7 @@
         <h2>My Profile</h2>
         <div id="profile">
             <div id="ikk125">
-                <img class="ikk125" src="/image/minecraft/ikk125.png" alt="ikoko125">
+                <img class="ikk125" src="/image/minecraft/ikk125.webp" alt="ikoko125">
             </div>
             <div class="ikk124">
                 <div>
