@@ -40,7 +40,7 @@ section{
     }
     color: #f1f1f1;
     background-color: rgb(37, 18, 31);
-    #intro{
+    #intro, #profile{
         padding-top: 1rem;
         padding-bottom: 1rem;
         background-color: #1118;
@@ -58,6 +58,13 @@ section{
                 text-decoration: none;
                 color: rgb(243, 221, 23);
             }
+        }
+        #ikk125{
+            display: flex;
+            justify-content: center;
+        }
+        img.ikk125{
+            height: 300px;
         }
     }
     .catw{

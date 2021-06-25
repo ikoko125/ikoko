@@ -13,6 +13,27 @@
             <p>私は2012年の春先、小学6年生の頃にMinecraftを購入しました。(当時のプレイヤー人口は500万人程)これがのちほどのほぼすべての活動のきっかけとなっています。ある意味人生を壊されたコンテンツです。</p>
 
         </div>
+        <h2>My Profile</h2>
+        <div id="profile">
+            <div id="ikk125">
+                <img class="ikk125" src="/image/minecraft/ikk125.png" alt="ikoko125">
+            </div>
+            <p>MinecraftID</p>
+            <ul><li>ikoko1/ikoko125/ikoko173</li></ul>
+            <p>使用バージョン</p>
+            <ul><li>PC版1.7.10/1.12.2/1.16.4</li></ul>
+            <p>パソコンのスペック</p>
+            <ul>
+                <li>CPU: intel&trade; Core i7-7700</li>
+                <li>GPU: HP Geforce GTX 1060 3GB</li>
+                <li>RAM: 16GB</li>
+                <li>SOUNDCARD: Creative SoundBlaster X-fi Titanium</li>
+                <li>Speaker: Edifier e10</li>
+                <li>Keyboard: Logicool G910r</li>
+            </ul>
+            <p>私は2012年の春先、小学6年生の頃にMinecraftを購入しました。(当時のプレイヤー人口は500万人程)これがのちほどのほぼすべての活動のきっかけとなっています。ある意味人生を壊されたコンテンツです。</p>
+
+        </div>
     <h2>CATEGORY</h2>
     <div class="catw">
         <div class="cat">
