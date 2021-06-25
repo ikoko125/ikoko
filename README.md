@@ -1,5 +1,5 @@
 # ikoko
-[ikoko.jp](ikoko.jp)
+[ikoko.jp](https://ikoko.jp)
 
 ## About License
 
