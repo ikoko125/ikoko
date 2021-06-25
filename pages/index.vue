@@ -14,7 +14,7 @@
     <section id="about1">
       <div>
         <div id="icon">
-          <img alt="icon" src="/image/06X.png">
+          <img alt="icon" src="/image/06X.webp">
           <nuxt-link to="/about" class="icon-ov">
             <p>>>More</p>
           </nuxt-link>

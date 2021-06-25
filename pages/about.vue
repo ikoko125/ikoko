@@ -4,7 +4,7 @@
     <section id="about1">
       <div>
         <div id="icon">
-          <img alt="icon" src="/image/06X.png">
+          <img alt="icon" src="/image/06X.webp">
         </div>
         <div>
           <h2>いここ</h2>

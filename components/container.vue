@@ -7,7 +7,7 @@
 <style lang="scss">
     @for $i from 1 to 10{
         .bg#{$i}{
-            background-image: url("/image/cards/card0#{$i}.png");
+            background-image: url("/image/cards/card0#{$i}.webp");
             background-size: cover;
         }
     }
