@@ -1,10 +1,5 @@
 <template>
-<div>
-  <main>
-    <section>
-    </section>
-  </main>
-</div>
+<h1>工事中です</h1>
 </template>
 
 <script lang="ts">

@@ -55,7 +55,7 @@
             </div>
             </transition>
             <transition name="show" appear>
-            <div class="RTM" v-show="viewcontrol">
+            <div class="RTM" @click="pagepre('/works/minecraft/RTM')" key="u"  v-show="viewcontrol">
                 <p>RTM</p>
             </div>
             </transition>

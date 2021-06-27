@@ -24,7 +24,7 @@ import Vue from 'vue'
 export default Vue.extend({})
 </script>
 
-<style>
+<style scoped>
 html{
   min-height: 100%;
 

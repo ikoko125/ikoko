@@ -97,5 +97,5 @@ import Vue from 'vue'
 export default Vue.extend({})
 </script>
 
-<style lang="scss" src="./index.scss">
+<style lang="scss" src="./index.scss" scoped>
 </style>

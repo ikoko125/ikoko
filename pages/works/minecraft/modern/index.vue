@@ -83,18 +83,19 @@ section{
     .catw{
         background-color: #050505;
     }
+    @media screen and (min-width:1024px) {
+        .cat{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
+        }
+    }
     .cat{
-        
+        grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
         max-width: 1400px;
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: grid;
         .view{
-
-        width: 240px;
-        height: 240px;
+        padding: 50% 0;
         margin: 5px;
         background-color: #f1f1f1;
         }

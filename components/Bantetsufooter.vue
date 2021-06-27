@@ -2,7 +2,7 @@
 <footer>
     <div id="ft">
         <div id="ftlogo">
-            <p>ikoko</p>
+            <Bantetsu id="flogo"></Bantetsu>
         </div>
         <div class="cpr"> 
             <a href="https://github.com/ikoko125/ikoko"><p>&copy; 2021 ikoko125 This site sourcecode is Licensed under MIT.</p></a>
@@ -21,6 +21,10 @@
 
 <style lang="scss" scoped>
     footer{
+        #flogo{
+        display: block;
+        height: 42.5px;
+      }
         a{
             text-align: center;
             color: #333;
@@ -98,6 +102,9 @@
     @media screen and (max-width:480px) {
         #ft{
             padding: 0.5rem !important;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center !important;
         }
         #ft, #fta{
             font-size: 0.8rem;

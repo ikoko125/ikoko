@@ -231,3 +231,58 @@ section{
         }
     }
 }
+.nxl{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+#rtmcat{
+    width: 90%;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .rtc1{
+        position: relative;
+        box-sizing: border-box;
+        background-size: cover;
+        &::before{
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+        .rtc2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #05050575;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            
+            p{
+                padding:0;
+                font-size: 3vw;
+                text-shadow: 0 0 25px #050505, 0 0 15px #050505;
+            }
+            @media  screen and (min-width:1600px) {
+                p{
+                    font-size: 3rem;
+                }
+                
+            }
+        }
+        margin: 5px;
+    }
+    .rtcbg1{
+        background-image: url("/image/minecraft/RTM/rtm1.webp");
+    }
+    .rtcbg2{
+        background-image: url("/image/minecraft/RTM/rtm2.webp");
+    }
+    .rtcbg3{
+        background-image: url("/image/minecraft/RTM/rtm3.webp");
+    }
+}
