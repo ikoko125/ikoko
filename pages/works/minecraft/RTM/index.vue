@@ -8,7 +8,7 @@
         <div id="intro">
             <div id="rtmcat">
                 <div class="rtc1 rtcbg1"><div class="rtc2"><p>モデルパック</p></div></div>
-                <div class="rtc1 rtcbg2"><div class="rtc2"><p>架空鉄道</p></div></div>
+                <nuxt-link to="/bantetsu" class="nxl"><div class="rtc1 rtcbg2"><div class="rtc2"><p>架空鉄道</p></div></div></nuxt-link>
                 <nuxt-link to="#ik124" class="nxl"><div class="rtc1 rtcbg3"><div class="rtc2"><p>RTMとは？</p></div></div></nuxt-link>
             </div>
             <h2>RTMとは？</h2>

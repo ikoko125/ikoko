@@ -1,7 +1,7 @@
 <template>
     <header id="header" :class="{ '-fixed': scrollY > 600 }">
         <!-- <img src="/logo.gif"> -->
-          <p id="topi"><nuxt-link to="/"><Bantetsu id="tlogo"></Bantetsu></nuxt-link></p>
+          <p id="topi"><nuxt-link to="/bantetsu"><Bantetsu id="tlogo"></Bantetsu></nuxt-link></p>
         <ul>
             <li><nuxt-link to="/">TOP</nuxt-link></li>
             <li><nuxt-link to="/news">News</nuxt-link></li>
