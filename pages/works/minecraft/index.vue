@@ -7,10 +7,18 @@
         </div>
         <h2>About</h2>
         <div id="intro">
+            <transition name="mcap1" appear>
             <p>Minecraftはレゴのようなブロックを使って様々なことをするゲームです。<a href="https://www.minecraft.net/en-us/partner">(一部の人はゲーム向けコンテンツ制作のため仕事をしている)</a></p>
+            </transition>
+            <transition name="mcap1" appear>
             <p>minecraftは2009年にcave gameとしてリリースされた同人ゲームでした。その後2011年末ごろまでβリリースなどが続けられ、その後まもなく製品版としてリリースされ人気も増していきました</p>
+            </transition>
+            <transition name="mcap1" appear>
             <p>日本での一般層への普及は2014年半ば頃ですが、ネットの住人たちが目をつけていたのは2010年末～2013年頃のことです。</p>
+            </transition>
+            <transition name="mcap1" appear>
             <p>私は2012年の春先、小学6年生の頃にMinecraftを購入しました。(当時のプレイヤー人口は500万人程)これがのちほどのほぼすべての活動のきっかけとなっています。ある意味人生を壊されたコンテンツです。</p>
+            </transition>
 
         </div>
         <h2>My Profile</h2>

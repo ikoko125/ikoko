@@ -286,3 +286,18 @@ section{
         background-image: url("/image/minecraft/RTM/rtm3.webp");
     }
 }
+
+//transtion
+
+
+.mcap1-enter-active , .mcap1-leave-active{
+    transition: all 1s;
+    }
+    .mcap1-enter {
+     transform: (translateX(350px) rotateX(90deg));
+    }
+    @for $i from 1 through 15 {
+        .mcap1-enter-active:nth-child(#{$i}) { 
+            transition: transform 1s 0.15s * $i ; 
+        }
+    }
