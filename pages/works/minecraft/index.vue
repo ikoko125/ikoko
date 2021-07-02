@@ -27,21 +27,21 @@
                 <img class="ikk125" src="/image/minecraft/ikk125.webp" alt="ikoko125">
             </div>
             <transition name="mcap1" appear>
-            <div class="ikk124" :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">
-                <div :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}" >
-                    <p :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">MinecraftID</p>
-                    <ul :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}"><li>ikoko1/ikoko125/ikoko173</li></ul>
-                    <p :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">使用バージョン</p>
-                    <ul :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}"><li>PC版1.7.10/1.12.2/1.16.4</li></ul>
-                    <p :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">パソコンのスペック</p>
-                    <ul :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">
-                        <li :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">CPU: intel&trade; Core i7-7700</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">GPU: HP Geforce GTX 1060 3GB</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">RAM: 16GB</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">SOUNDCARD: Creative SoundBlaster X-fi Titanium</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">Speaker: Edifier e10</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">Keyboard: Logicool G910r</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 600, 'mcap1-enter-active' : scrollY > 600}">Mouse: Logicool G300s</li>
+            <div class="ikk124" :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">
+                <div :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}" >
+                    <p :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">MinecraftID</p>
+                    <ul :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}"><li>ikoko1/ikoko125/ikoko173</li></ul>
+                    <p :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">使用バージョン</p>
+                    <ul :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}"><li>PC版1.7.10/1.12.2/1.16.4</li></ul>
+                    <p :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">パソコンのスペック</p>
+                    <ul :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">
+                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">CPU: intel&trade; Core i7-7700</li>
+                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">GPU: HP Geforce GTX 1060 3GB</li>
+                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">RAM: 16GB</li>
+                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">SOUNDCARD: Creative SoundBlaster X-fi Titanium</li>
+                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">Speaker: Edifier e10</li>
+                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">Keyboard: Logicool G910r</li>
+                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">Mouse: Logicool G300s</li>
                     </ul>
                 </div>
                 <div class="lr">
