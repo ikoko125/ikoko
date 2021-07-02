@@ -300,4 +300,5 @@ section{
         .mcap1-enter-active:nth-child(#{$i}) { 
             transition: transform 1s 0.15s * $i ; 
         }
+        
     }
