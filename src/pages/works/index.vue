@@ -48,52 +48,33 @@
 
 <script>
 export default {
-    data(){
-        return{
-            viewcontrol: false
-        }
-    },
-    mounted(){
-        if (process.client) {
-            window.addEventListener('load', function() {
-            this.viewcontrol = !this.viewcontrol;
-            })
-        }
-        
-    },
     methods:{
-            // window : onload = function(){
-            // this.viewcontrol = !this.viewcontrol;
-            // },
         pagepre(url){
             setTimeout(() => this.$router.push(url),1000);
         }
-    },
+    }
 }
 </script>
 
 <style lang="scss" scoped>
     @keyframes inanim {
         0%{
-            transform: (translateY(50px) rotateX(90deg));
+            transform: (translateY(100px) rotateX(90deg));
         }
         100%{
             transform: (translateY(0px) rotateX(0deg));
         }
     }
-    .show-enter-active , .show-leave-active{
-    transition: all 1s;
-    }
-    .show-enter {
-     transform: (translateY(50px) rotateX(90deg));
-    }
     @for $i from 1 through 15 {
         .ui-wrapper div:nth-child(#{$i}) { 
-            animation: 1s 0.05s * $i forwards inanim; 
+            animation: 1s 0.1 + 0.05s * $i forwards inanim; 
         }
     }
     .ui-wrapper a{
         text-decoration: none;
+    }
+    .ui-wrapper div{
+        transform: (translateY(100px) rotateX(90deg));
     }
     section{
         user-select: none;
@@ -125,7 +106,6 @@ export default {
                         height: 135vw; 
                         margin: 0 auto;
                         div{
-                            transform: (translateY(50px) rotateX(90deg));
                             transition: 0.5s cubic-bezier(.09,.66,.48,.99);
                             margin: 2.5px;
                             background-size: cover;
