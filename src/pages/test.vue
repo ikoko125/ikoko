@@ -28,29 +28,32 @@
 </template>
 
 <script>
-export default {
-    data(){
-        return{
-            viewx : false,
-        }
-    },
-  mounted() {
-    // fetch cards
-    window.addEventListener('scroll', this.handleScroll)
-  },
-    methods:{
-        window:onload = function(){
-            this.viewx = false;
-            setTimeout(this.viewx = !this.viewx, 2000);
-        },
-        test() {
-            this.viewx = !this.viewx;
-        },
-        handleScroll() {
-            this.scrollY = window.scrollY
-        }
-    },
-}
+// export default {
+//     data(){
+//         return{
+//             viewx : false,
+//         }
+//     },
+//   mounted() {
+//     // fetch cards
+//     if (process.browser) {
+//     window.addEventListener('scroll', this.handleScroll)
+//     }
+//   },
+//     methods:{
+        
+//         window:onload = function(){
+//             this.viewx = false;
+//             setTimeout(this.viewx = !this.viewx, 2000);
+//         },
+//         test() {
+//             this.viewx = !this.viewx;
+//         },
+//         handleScroll() {
+//             this.scrollY = window.scrollY
+//         }
+//     },
+// }
 </script>
 
 <style lang="scss" scoped>

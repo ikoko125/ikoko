@@ -24,17 +24,20 @@
           <p>ハヤテのごとくだいすき</p>
           <p>WEBサイトを作ったりMinecraftとかします</p>
           <p>芦原サーバー　鯖主</p>
-          <p style="margin: 1rem 0;">
+          <p style="margin: 1.5rem 0;">
             <a href="https://qiita.com/ikoko125"><span class="qi">Qiita</span></a>
             <a href="https://github.com/ikoko125"><span class="gi">Github</span></a>
             <a href="https://twitter.com/ikoko125"><span class="tw">Twitter</span></a>
             <a href="https://www.pixiv.net/users/30420680"><span class="pi">Pixiv</span></a>
           </p>
+          <p style="margin: 1.5rem 0;">
+            <a href="https://togetter.com/li/1702544"><span class="tg">作品ツイートまとめ</span></a>
+          </p>
         </div>
       </div>
     </section>
     
-    <!--<section id="content">
+    <section id="content">
       <div id="content-w">
         <div id="t">
           <Container class="bg1">
@@ -42,7 +45,7 @@
               <h3 class="c-en">Minecraft</h3>
              </nuxt-link>
           </Container>
-          <Container class="bg2">
+          <!-- <Container class="bg2">
             <h3 class="c-jp">磐島重工</h3>
           </Container>
           <Container class="bg3">
@@ -59,21 +62,21 @@
           </Container>
           <Container class="bg7">
             <h3 class="c-en">Modes-fi</h3>
-          </Container>
+          </Container> -->
           <Container class="bg8">
             <nuxt-link to="/works/minecraft/server/">
             <h3 class="c-en">Server</h3>
             </nuxt-link>
           </Container>
-          <Container class="bg9">
+          <!-- <Container class="bg9">
             <h3 class="c-en">Archive-Live</h3>
           </Container>
           <Container class="bg10">
             <h3 class="c-en">Archive-Live</h3>
-          </Container>
+          </Container> -->
         </div>
       </div>
-    </section>-->
+    </section>
 </div>
 </template>
 

@@ -1,12 +1,20 @@
+
+//cmd
+//npx cross-env BASE_DIR=/ nuxt generate
+const baseDir = process.env.BASE_DIR || '/'
 export default {
-  ssr: true,
+  //ssr: true,
   target: 'static',
+
+  srcDir: 'src',
+
+  
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'ikoko',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'jp'
     },
     meta: [
       { charset: 'utf-8' },
@@ -45,27 +53,13 @@ export default {
   modules: [
   ],
 
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    parallel:true,
-    cache: true,
-    hardSource: true,
-    extend(config, { isDev }) {
-      if (!isDev) {
-        config.output.publicPath = './_nuxt/'
-      }
 
-    },
-    transpile: [
-      'three'
-    ], 
-    babel: {
-      babelrc: false,
-      compact: false
-    }
   },
   router: {
-    base: '/'
+    base: baseDir,
   },
   extractCSS: true,
     optimization: {

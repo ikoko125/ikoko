@@ -80,20 +80,22 @@
 export default {
     data(){
         return{
-            viewcontrol: true
+            viewcontrol: false
         }
     },
     mounted(){
-        window.addEventListener('load', function() {
+        if (process.browser) {
+            window.addEventListener('load', function() {
             this.viewcontrol = !this.viewcontrol;
-            console.log(this.viewcontrol);
-})
+            })
+        }
+        
     },
     methods:{
-        window : onload = function(){
-            this.viewcontrol = !this.viewcontrol;
-            console.log(this.viewcontrol);
-        },
+        // window : onload = function(){
+        //     this.viewcontrol = !this.viewcontrol;
+        //     console.log(this.viewcontrol);
+        // },
         pagepre(url){
             setTimeout(() => this.$router.push(url),1000);
         }
