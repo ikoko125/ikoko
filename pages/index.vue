@@ -34,7 +34,7 @@
       </div>
     </section>
     
-    <section id="content">
+    <!--<section id="content">
       <div id="content-w">
         <div id="t">
           <Container class="bg1">
@@ -72,22 +72,8 @@
             <h3 class="c-en">Archive-Live</h3>
           </Container>
         </div>
-        <!-- <div>
-        <h1>ikoko</h1>
-        </div>
-        <div>
-          <p>About</p>
-          <p>Works</p>
-          <p>Fanfic</p>
-          <p>Other</p>
-          <p>Other</p>
-          <p>Other</p>
-          <p>Other</p>
-          <p>Other</p>
-          <p>Other</p>
-        </div> -->
       </div>
-    </section>
+    </section>-->
 </div>
 </template>
 

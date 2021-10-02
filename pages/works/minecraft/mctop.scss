@@ -49,6 +49,7 @@ section{
     color: #f1f1f1;
     background-color: rgb(37, 18, 31);
     #intro, #profile, #cascu{
+        overflow-x: hidden;
         padding-top: 1rem;
         padding-bottom: 1rem;
         background-color: #1118;
@@ -56,6 +57,7 @@ section{
         
         font-family: "Shippori Mincho" , serif;
         .ikk124{
+            overflow-x: hidden;
             width: 90%;
             max-width: 1400px;
             margin: 0 auto;
@@ -292,12 +294,17 @@ section{
 
 .mcap1-enter-active , .mcap1-leave-active{
     transition: all 1s;
+    transform: (translateX(0px) rotateX(0deg));
+    overflow-x: hidden;
     }
     .mcap1-enter {
+    transition: all 1s;
      transform: (translateX(350px) rotateX(90deg));
     }
     @for $i from 1 through 15 {
-        .mcap1-enter-active:nth-child(#{$i}) { 
+        .mcap1-enter-active *:nth-child(#{$i}),
+        .mcap1-leave-active *:nth-child(#{$i}),
+        .mcap1-enter *:nth-child(#{$i}){ 
             transition: transform 1s 0.15s * $i ; 
         }
         

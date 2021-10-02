@@ -1,20 +1,6 @@
 export default {
-  ssr: false,
-  // Target: https://go.nuxtjs.dev/config-target
+  ssr: true,
   target: 'static',
-
-  build: {
-    extend(config, { isDev }) {
-      if (!isDev) {
-        config.output.publicPath = './_nuxt/'
-      }
-
-    }
-  },
-  router: {
-    base: '/',
-    mode: 'hash'
-  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -61,6 +47,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    parallel:true,
+    cache: true,
+    hardSource: true,
     extend(config, { isDev }) {
       if (!isDev) {
         config.output.publicPath = './_nuxt/'
@@ -76,7 +65,27 @@ export default {
     }
   },
   router: {
-    base: '/',
-    mode: 'hash'
-  }
+    base: '/'
+  },
+  extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          // globalスタイル
+          styles: {
+            name: 'styles',
+            test: /\.(css|scss)$/,
+            chunks: 'initial',
+            enforce: true
+          },
+          // components配下のスタイル
+          components: {
+            name: 'components',
+            test: /app\/components/,
+            chunks: 'all',
+            enforce: true
+          },
+        }
+      }
+    },
 }

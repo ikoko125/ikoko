@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="nuxt">
     <BantetsuHeader/>
     <main>
     <Nuxt />

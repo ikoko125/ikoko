@@ -27,21 +27,21 @@
                 <img class="ikk125" src="/image/minecraft/ikk125.webp" alt="ikoko125">
             </div>
             <transition name="mcap1" appear>
-            <div class="ikk124" :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">
-                <div :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}" >
-                    <p :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">MinecraftID</p>
-                    <ul :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}"><li>ikoko1/ikoko125/ikoko173</li></ul>
-                    <p :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">使用バージョン</p>
-                    <ul :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}"><li>PC版1.7.10/1.12.2/1.16.4</li></ul>
-                    <p :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">パソコンのスペック</p>
-                    <ul :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">
-                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">CPU: intel&trade; Core i7-7700</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">GPU: HP Geforce GTX 1060 3GB</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">RAM: 16GB</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">SOUNDCARD: Creative SoundBlaster X-fi Titanium</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">Speaker: Edifier e10</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">Keyboard: Logicool G910r</li>
-                        <li :class="{'mcap1-enter' : scrollY <= 400, 'mcap1-enter-active' : scrollY > 400}">Mouse: Logicool G300s</li>
+            <div class="ikk124" ref="pos1" :class="{'mcap1-enter' : posj == false, 'mcap1-enter-active' : posj == true}">
+                <div :class="{'mcap1-enter' : posj == false, 'mcap1-enter-active' : posj == true}" >
+                    <p>MinecraftID</p>
+                    <ul><li>ikoko1/ikoko125/ikoko173</li></ul>
+                    <p>使用バージョン</p>
+                    <ul><li>PC版1.7.10/1.12.2/1.16.4</li></ul>
+                    <p >パソコンのスペック</p>
+                    <ul >
+                        <li >CPU: intel&trade; Core i7-7700</li>
+                        <li >GPU: HP Geforce GTX 1060 3GB</li>
+                        <li >RAM: 16GB</li>
+                        <li >SOUNDCARD: Creative SoundBlaster X-fi Titanium</li>
+                        <li >Speaker: Edifier e10</li>
+                        <li >Keyboard: Logicool G910r</li>
+                        <li >Mouse: Logicool G300s</li>
                     </ul>
                 </div>
                 <div class="lr">
@@ -57,7 +57,7 @@
                 <img class="ikk125" src="/image/cascu.webp" alt="ikoko125">
             </div>
             <p>建築の更なる発展を求めるため、芦原鯖1.12.2(新床市)は都市連合CASCUに参加しています。</p>
-            <div class="ikk124">
+            <div class="ikk124"  ref="pos2" :class="{'mcap1-enter' : posj2 == false, 'mcap1-enter-active' : posj2 == true}">
                 <div>
                     <h3>方針</h3>
                     <p>"CASCU(カスク)は完全招待制のMINECRAFT都市連合です。MINECRAFT都市開発を牽引し、完全招待制にする事により今までの都市連合にない、美しさを追求するCASCUは、都市連合組織に対する新たなアプローチを熟考します。
@@ -125,15 +125,32 @@
 export default {
     data() {
         return{
-            scrollY: 0
+            scrollY: 0,
+            posj : false,
+            posj2 : false
         }
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
+    //   const pos1 = this.$refs.pos1.getBoundingClientRect().top + window.pageYOffset
+
+    
   },
   methods:{
     handleScroll() {
       this.scrollY = window.scrollY
+      const pos1 = this.$refs.pos1.getBoundingClientRect().top -150
+      const pos2 = this.$refs.pos2.getBoundingClientRect().top -150
+      if (this.scrollY <= pos1){
+          this.posj = false
+      }else{
+          this.posj = true
+      }
+      if (this.scrollY <= pos2){
+          this.posj2 = false
+      }else{
+          this.posj2 = true
+      }
     }
   }
 }
