@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.6"
+    "nuxt": "^2.15.6",
+    "vue-no-ssr": "^1.1.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.3",

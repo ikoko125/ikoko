@@ -4,73 +4,43 @@
         <h1>Works</h1>
         </div>
         <div class="ui-wrapper">
-            <transition name="show" appear>
-                <div class="Minecraft" @click="pagepre('/works/minecraft')" key="u" v-show="viewcontrol">
+                <div class="Minecraft" @click="pagepre('/works/minecraft')" key="u" >
                     <p>MINECRAFT</p>
                 </div>
-            </transition>
-            <transition name="show" appear>
-                <div class="OtherFanfic" v-show="viewcontrol">
+                <div class="OtherFanfic" >
                     <p>FANFIC</p>
                 </div>
-            </transition>
-            <transition name="show" appear>
-                <div class="fanfichayate" v-show="viewcontrol">
+                <div class="fanfichayate" >
                     <p>HAYATE-FANFIC</p>
                 </div>
-            </transition>
-            <transition name="show" appear>
-                <div class="ASHI" v-show="viewcontrol">
+                <div class="ASHI" >
                     <p>ASHI</p>
                 </div>
-            </transition>
-            <transition name="show" appear>
-                <div class="Magicavoxel" v-show="viewcontrol">
+                <div class="Magicavoxel" >
                     <p>MAGICAVOXEL</p>
                 </div>
-            </transition>
-            <transition name="show" appear>
-                <div class="modesfi" v-show="viewcontrol">
+                <div class="modesfi" >
                     <p>MODES-FI</p>
                 </div>
-            </transition>
-            <transition name="show" appear>
-                <div class="product" v-show="viewcontrol">
+                <div class="product" >
                     <p>PRODUCT</p>
                 </div>
-            </transition>
-            <transition name="show" appear>
-                <div class="Design" v-show="viewcontrol">
+                <div class="Design" >
                     <p>DESIGN</p>
                 </div>
-            </transition>
-            <transition name="show" appear>
-                <div class="Illust" v-show="viewcontrol">
+                <div class="Illust" >
                     <p>ILLUST</p>
                 </div>
-            </transition>
-            <transition name="show" appear>
-            <div class="program" v-show="viewcontrol">
+            <div class="program" >
                 <p>PROGRAM</p>
             </div>
-            </transition>
-            <transition name="show" appear>
-            <div class="RTM" @click="pagepre('/works/minecraft/RTM')" key="u"  v-show="viewcontrol">
+            <div class="RTM" @click="pagepre('/works/minecraft/RTM')" key="u"  >
                 <p>RTM</p>
             </div>
-            </transition>
-            <transition name="show" appear>
-            <div class="ADD1" v-show="viewcontrol"></div>
-            </transition>
-            <transition name="show" appear>
-            <div class="ADD2" v-show="viewcontrol"></div>
-            </transition>
-            <transition name="show" appear>
-            <div class="ADD3" v-show="viewcontrol"></div>
-            </transition>
-            <transition name="show" appear>
-            <div class="ADD4" v-show="viewcontrol"></div>
-            </transition>
+            <div class="ADD1" ></div>
+            <div class="ADD2" ></div>
+            <div class="ADD3" ></div>
+            <div class="ADD4" ></div>
         </div>
         
     </section>   
@@ -84,7 +54,7 @@ export default {
         }
     },
     mounted(){
-        if (process.browser) {
+        if (process.client) {
             window.addEventListener('load', function() {
             this.viewcontrol = !this.viewcontrol;
             })
@@ -92,10 +62,9 @@ export default {
         
     },
     methods:{
-        // window : onload = function(){
-        //     this.viewcontrol = !this.viewcontrol;
-        //     console.log(this.viewcontrol);
-        // },
+            // window : onload = function(){
+            // this.viewcontrol = !this.viewcontrol;
+            // },
         pagepre(url){
             setTimeout(() => this.$router.push(url),1000);
         }
@@ -104,6 +73,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @keyframes inanim {
+        0%{
+            transform: (translateY(50px) rotateX(90deg));
+        }
+        100%{
+            transform: (translateY(0px) rotateX(0deg));
+        }
+    }
     .show-enter-active , .show-leave-active{
     transition: all 1s;
     }
@@ -111,8 +88,8 @@ export default {
      transform: (translateY(50px) rotateX(90deg));
     }
     @for $i from 1 through 15 {
-        .show-enter-active:nth-child(#{$i}) { 
-            transition: transform 0.8s 0.05s * $i ; 
+        .ui-wrapper div:nth-child(#{$i}) { 
+            animation: 1s 0.05s * $i forwards inanim; 
         }
     }
     .ui-wrapper a{
@@ -148,6 +125,7 @@ export default {
                         height: 135vw; 
                         margin: 0 auto;
                         div{
+                            transform: (translateY(50px) rotateX(90deg));
                             transition: 0.5s cubic-bezier(.09,.66,.48,.99);
                             margin: 2.5px;
                             background-size: cover;
