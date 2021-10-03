@@ -4,7 +4,7 @@
         <h1>Works</h1>
         </div>
         <div class="ui-wrapper">
-                <div class="Minecraft" @click="pagepre('/works/minecraft')" key="u" >
+                <div class="Minecraft" @click="pagepre('/works/minecraft')" >
                     <p>MINECRAFT</p>
                 </div>
                 <div class="OtherFanfic" >

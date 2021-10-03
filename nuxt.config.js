@@ -2,8 +2,11 @@
 //cmd
 //npx cross-env BASE_DIR=/ nuxt generate
 const baseDir = process.env.BASE_DIR || '/'
+// module.exports = {
+
+// };
 export default {
-  //ssr: true,
+  ssr: true,
   target: 'static',
 
   srcDir: 'src',
@@ -34,6 +37,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    {src: '@/assets/css/fonts.css'},
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
